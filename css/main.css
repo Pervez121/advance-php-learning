@@ -1,0 +1,134 @@
+/*
+* Stylesheet for PHP Course
+*/
+body {
+    background: #f0f0f0;
+}
+*{
+    box-sizing: border-box;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.post {
+    margin: 10px;
+    float: left;
+    position: relative;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #dddddd;
+    width: 29%;
+    box-shadow: 0px 0px 5px #cccccc;
+}
+.thumbnail {
+    width: 100%;
+}
+.thumbnail img {
+    max-width: 100%;
+}
+.read-more {
+    text-decoration: none;
+    color: #fff;
+    background: #333333;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.signup-form {
+    width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #dddddd;
+}
+.signup-form input[type="text"], .signup-form input[type="email"], .signup-form input[type="url"], .signup-form textarea, .signup-form select {
+    width: 100%;
+    display: inline-block;
+}
+.signup-form label {
+    font-size: 22px;
+    color: #666666;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.form-row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.form-row:last-child {
+    margin-bottom: 0;
+}
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="url"], .form-row textarea {
+    padding: 10px;
+    font-size: 20px;
+    color: #333333;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+}
+.form-row textarea {
+    min-height: 150px;
+    font-weight: normal !important;
+}
+.form-row select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+}
+.form-row .signup-btn, .form-row .reset-btn {
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    width: 49.5%;
+    cursor: pointer;
+}
+.form-row .signup-btn {
+    background: olivedrab;
+}
+.form-row .reset-btn {
+    background: #333333;
+}
+.error-row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.error-row span {
+    padding: 10px;
+    background:  #FE431B;
+    color: #fff;
+    display: none;
+    border-radius: 5px;
+}
+.fieldError {
+    padding: 5px;
+    border: 1px solid #FE431B;
+    border-radius: 5px;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.container.header_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_container > div{
+width: unset;
+}
+
+
+.user_image{
+    width: 35px;
+    border-radius: 50%;
+}
