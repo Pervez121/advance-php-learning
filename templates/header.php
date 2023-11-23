@@ -9,6 +9,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php site_title() ?></title>
+    <!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <link href="css/login.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +25,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     <span>Email: info@wpacademy.pk</span>
                     <span>Phone: +1-111-111111</span>
                 </div>
-                <div class="small-header-col social-icons">
+                <div class="small-header-col social-icons user-info">
                     <!-- <span><img src="images/facebook.png" alt="Facebook"></span>
                     <span><img src="images/twitter.png" alt="Twitter"></span>
                     <span><img src="images/path.png" alt="Path"></span>
@@ -28,13 +34,13 @@ if (session_status() === PHP_SESSION_NONE) {
                     <!-- <img src="images/pervez.jpg" alt="user" class="user_image"> -->
                    
                         <?php
-                            if(isset($_SESSION['$user_id'] ) && isset($_SESSION['$user_name'] )){
-                                echo 'Welcome:'.$_SESSION['$user_name'];
-                                echo '<a href="logout.php" class="logout_link">Logout</a>';
+                            if(isset($_SESSION['user_name'] ) && isset($_SESSION['password'] )){
+                                echo '<span class="welcome">Welcome</span>: <span class="username">'. $_SESSION['user_name'].'</span>';
+                                echo '<a href="logout.php" class="logout_link"> Logout</a>';
                             
                             }
                             else{
-                                echo '<a href="login.php">login</a>';
+                                echo '<a href="login.php" class="login-txt">login</a>';
                             }
                         ?>
                          

@@ -135,7 +135,7 @@ body {
 
 .container.header_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header_container > div{
@@ -146,6 +146,27 @@ width: unset;
 .user_image{
     width: 35px;
     border-radius: 50%;
+}
+
+span.welcome {
+    color: #003466;
+    font-weight: 700;
+}
+
+span.username {
+    text-decoration: underline;
+    color: #23a455;
+    font-weight: 700;
+    text-underline-position: under;
+    text-transform: capitalize;
+}
+
+a.logout_link {
+    color: black;
+}
+a.logout_link:hover{
+text-decoration: underline;
+    color: #e81313;
 }
 
 /*------------------------------
