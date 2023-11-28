@@ -1,12 +1,12 @@
 <!-- create connection veriables -->
 <?php
 $server_name = "localhost";
-$user_name = "root";
+$db_user_name = "root";
 $password = "";
 
 // connect to databace
 
-$connection = new mysqli($server_name , $user_name , $password);
+$connection = new mysqli($server_name , $db_user_name , $password);
 
 
 

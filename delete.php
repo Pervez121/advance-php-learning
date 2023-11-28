@@ -5,7 +5,6 @@
 
         $sql = "SELECT * FROM users ORDER BY user_name LIMIT 2 , 5";
         $reasult = $connection->query($sql);
-
 ?>
 
 <!-- /* <div class="container">
@@ -26,7 +25,7 @@
             <th scope="col">User name</th>
             <th scope="col">User email</th>
             <th scope="col">Registration date</th>
-            <th scope="col">Action</th>
+           
         </tr>
     </thead>
     <tbody>
@@ -40,7 +39,7 @@
             <td><?php echo $row["user_name"]; ?></td>
             <td><?php echo $row["user_email"]; ?></td>
             <td><?php echo $row["Registration_date"]; ?></td>
-            <td><a href="user-details.php?id=<?php echo $row["user_id"]; ?>" class="actions">Edit</a> &nbsp <a href="" class="actions">Delete</a></td>
+        
         </tr>
 
         <?php }}  ?>
