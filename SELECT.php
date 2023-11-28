@@ -40,7 +40,8 @@
             <td><?php echo $row["user_name"]; ?></td>
             <td><?php echo $row["user_email"]; ?></td>
             <td><?php echo $row["Registration_date"]; ?></td>
-            <td><a href="user-details.php?id=<?php echo $row["user_id"]; ?>" class="actions">Edit</a> &nbsp <a href="" class="actions">Delete</a></td>
+            <td><a href="user-details.php?id=<?php echo $row["user_id"]; ?>" class="actions">Edit</a> &nbsp <a
+                    href="delete_user.php?id=<?php echo $row["user_id"]; ?>&confirm=0" class="actions">Delete</a></td>
         </tr>
 
         <?php }}  ?>
