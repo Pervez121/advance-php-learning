@@ -8,8 +8,8 @@ $connection->select_db("php_tutorial");
 // ********************** code for populating fields ************************
 // **************************************************************************
 
-if(isset($_GET["id"]) && !empty($_GET["id"])){
-    $user_id = intval($_GET["id"]);
+if(isset($_GET["user_id"]) && !empty($_GET["user_id"])){
+    $user_id = intval($_GET["user_id"]);
     $sql = "SELECT * FROM Users WHERE user_id = $user_id";
     $reasult = $connection->query($sql);
     if($reasult->num_rows > 0 ){
@@ -30,7 +30,14 @@ else{
 }
 
 
+
 ?>
+
+<style>
+    header#main-header {
+    display: none;
+}
+</style>
 
 <section class="vh-100" style="background-color: #eee;">
     <div class="container h-100">
@@ -153,5 +160,5 @@ else{
 
 
 <?php
-require "templates/footer.php";
+//require "templates/footer.php";
 ?>
